@@ -8,8 +8,7 @@ namespace codility_practice
     class BinaryGap
     {
         public int solution(int N)
-        {
-            N = 9898;
+        {           
             string binary = Convert.ToString(N, 2);
             var split = binary.ToCharArray();
 
@@ -26,10 +25,7 @@ namespace codility_practice
                 else if (split[i] == '0')
                 {
                     counter++;
-                    if(i == split.Length - 1)
-                    {
-                        counterList.Add(counter);
-                    }
+                    
                 }
                 else if (split[i] == '1' && split[i - 1] == '0')
                 {
@@ -38,6 +34,10 @@ namespace codility_practice
                 }             
             }
 
+            if(counterList.Count == 0)
+            {
+                return 0;
+            }
             int solution = counterList.Max();
             return solution;
         }
