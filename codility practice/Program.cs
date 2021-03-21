@@ -11,7 +11,8 @@ namespace codility_practice
             //var findMissingInteger = new FindMissingInteger();
             //var solution = FindMissingInteger.solution(A);
             //Console.WriteLine(solution);
-            
+
+            var binaryGap = new BinaryGap();
         }
 
         
