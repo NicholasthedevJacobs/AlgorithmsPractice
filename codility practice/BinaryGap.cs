@@ -14,14 +14,14 @@ namespace codility_practice
             var split = binary.ToCharArray();
 
             var counter = 0;
-            bool foundOne = false;
+            
             List<int> counterList = new List<int>();
 
             for(int i = 0; i < split.Length; i++)
             {
                 if (split[0] == '1' && i == 0)
                 {
-                    foundOne = true;
+                    continue;
                 }
                 else if (split[i] == '0')
                 {
